@@ -1,0 +1,116 @@
+
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background: #ffffff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+    padding: 0px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+header .logo {
+    font-weight: bolder;
+    font-size: 25px;
+    color: #333;
+}
+.logo {
+    size: 25px;
+}
+
+header .navbar ul {
+    list-style: none;
+}
+
+header .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+header .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #333;
+    display: block;
+}
+
+header .navbar ul li a:hover {
+    background: white;
+    color: blue;
+}
+
+
+#menu-bar {
+    display: none;
+}
+
+
+header label {
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+    display: none;
+}
+
+
+.quote-button {
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 47px;
+    width: 100px;
+    background-color:rgb(40, 96, 236);
+    border-radius: 8px;
+    border-color: white;
+    border-style: solid;
+    font-style: bold;
+    padding-top: 5px;
+    padding-bottom: 4px;
+    padding-left: 10px;
+    padding-right: 8px;
+    white-space: nowrap;
+}
+
+button a {
+    color: white;
+}
+
+
+
+
+@media (max-width:991px) {
+    header {
+        padding: 20px;
+
+    }
+
+    header label {
+        display: initial;
+    }
+
+    header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: white;
+        border-top: 1px solid rgba(0, 0, 0, .1);
+        display: none;
+    }
+
+    header .navbar ul li {
+        position: relative;
+        width: 100%;
+        
+    }
+
+    #menu-bar:checked ~ .navbar {
+        display: initial;
+    }
+}
